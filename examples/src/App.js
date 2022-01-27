@@ -4,6 +4,8 @@ import CounterClass from "./components/CounterClass";
 import CounterReducer from "./components/CounterReducer";
 import CounterUseContextFather from "./components/CounterUseContextFather";
 import CounterContextReducerFather from "./components/CounterContextReducerFather";
+import CounterUseEffect from "./components/CounterUseEffect";
+
 import "./App.css"
 
 function App() {
@@ -33,6 +35,10 @@ function App() {
       <div className="counter-container">
         <h3>Counter Use Context with Use Reducer</h3>
         <CounterContextReducerFather></CounterContextReducerFather >
+      </div>
+      <div className="counter-container">
+        <h3>Counter UseEffect</h3>
+        <CounterUseEffect></CounterUseEffect >
       </div>
     </div>
   );
