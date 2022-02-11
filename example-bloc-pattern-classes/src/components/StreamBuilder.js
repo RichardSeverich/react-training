@@ -18,7 +18,6 @@ class StreamBuilder extends Component {
     this.state = {
       snapshot: new AsyncSnapshot(initialData),
     };
-
     stream.subscribe(
       data => {
         this.setState({
@@ -34,4 +33,3 @@ class StreamBuilder extends Component {
 }
 
 export default StreamBuilder;
-

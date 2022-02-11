@@ -1,9 +1,7 @@
-import { Fragment } from 'react';
-
 import StreamBuilder from './StreamBuilder';
 
 const Counter = ({ bloc }) => (
-  <Fragment>
+  <>
     <button onClick={() => bloc.increase()}>increment</button>
     <button onClick={() => bloc.decrease()}>decrement</button>
     <p>
@@ -12,11 +10,11 @@ const Counter = ({ bloc }) => (
         <StreamBuilder
           initialData={0}
           stream={bloc.counter}
-          builder={snapshot => <p>{snapshot.data}</p>}
+          builder={snapshot => <>{snapshot.data}</>}
         />
       </label>
     </p>
-  </Fragment>
+  </>
 );
 
 export default Counter;
