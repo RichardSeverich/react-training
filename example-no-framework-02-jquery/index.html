@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="src/css/table.css">
+  <link rel="stylesheet" type="text/css" href="src/css/navigation-bar.css">
+  <link rel="stylesheet" type="text/css" href="src/css/form.css">
+  <link rel="stylesheet" type="text/css" href="src/css/index.css">
+  <script src="src/javascript/navigate.js" defer></script>
+
+  <script src="libraries/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(window).on("load", function () {
+      $("#app-nav-bar").load("src/components/navigation-bar.html");
+      $("#app-form").load("src/components/form.html");
+      $("#app-table").load("src/components/table.html");
+    });
+    var arrayUsers = [
+      {
+        id: 1,
+        username: "MorrixAlizon",
+        password: "hola123",
+        name: "Morrix",
+        lastname: "Alizon"
+      },
+      {
+        id: 2,
+        username: "MichaelJason",
+        password: "arbol123",
+        name: "Michael",
+        lastname: "Jason"
+      },
+      {
+        id: 3,
+        username: "OliverHarriz",
+        password: "piso123",
+        name: "Oliver",
+        lastname: "Harriz"
+      },
+    ];
+    var arrayClients = [];
+  </script>
+</head>
+
+<body>
+  <div id="app-nav-bar"></div>
+  <div id="app-form"></div>
+  <div id="app-table"></div>
+
+</body>
+
+
+
+</html>
