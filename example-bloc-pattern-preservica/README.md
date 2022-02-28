@@ -24,3 +24,12 @@
 <p align="center">
   <img src="documentation/architecture-medium-level.jpg">
 </p>
+
+
+### ObserverPattern
+
+Each component can observe any state
+
+<p align="center">
+  <img src="documentation/ObserverPattern.jpg">
+</p>
